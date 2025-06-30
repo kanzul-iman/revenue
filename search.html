@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+    <!-- link to style -->
+     <link rel="styleSheet"  href="style.css">
+     <!-- script -->
+      <script src="script.js" defer></script>
+     <!-- link to bootstrap cdn for css styling -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- bootstrap icons -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body  class="search-page" >
+    <!-- navbar -->
+      <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: white;">
+  <div class="container-fluid mt-100">
+    <!-- Left: Logo -->
+    <a class="navbar-brand " href="#">
+      <img src="images/log.png" alt="Logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right: Links + Button -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+       <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="search.html">Search</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="agents.html">Agents</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+
+          <a href="#" class="btn btn-light ms-3 d-flex align-items-center"  data-bs-toggle="modal" data-bs-target="#memberModal" style="color:#6edaf6; border-radius:30px; padding:15px 20px 15px 10px; font-weight: 700;">
+            <i class="bi bi-person-plus-fill me-2"></i> Become a Member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+<!-- Search Section -->
+<section class="search-section py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent px-0">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none text-primary">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Search Revenue Generate Properties</li>
+          </ol>
+        </nav>
+        <h2 class="fw-bold mt-3">All Search</h2>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Main Section -->
+<section class="py-5" style="background-color: #f7f7f7;">
+  <div class="container">
+    <div class="row">
+
+      <!-- Left: Filters -->
+      <div class="col-md-4">
+        <form style="background-color: white; border-radius: 10px; padding: 15px;">
+
+          <!-- 10 Dropdowns -->
+          <div class="mb-3">
+            <select class="form-select">
+              <option>State</option>
+              <option>Florida</option>
+              <option>New York</option>
+              <option>California</option>
+              <option>USA</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select">
+              <option>Country</option>
+              <option>USA</option>
+              <option>United Kingdom</option>
+              <option>Canada</option>
+              <option>Australia</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Bedrooms Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Bathrooms Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Min Price Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Any</option></select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select"><option>Any</option></select>
+          </div>
+          <div class="mb-3">
+
+            <select class="form-select"><option>Any</option></select>
+          </div>
+
+          <!-- Search Button -->
+          <button type="submit" class="btn btn-primary w-100 mt-2">Search</button>
+        </form>
+      </div>
+
+      <!-- Right: Results and Cards -->
+      <div class="col-md-8">
+        <!-- Top Controls -->
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3" style="background-color: white; padding: 10px; border-radius: 10px;">
+          <h5 class="mb-0">Search Results</h5>
+          <div class="d-flex gap-2">
+            <select class="form-select form-select-sm">
+              <option>All Status</option>
+              <option>Recent</option>
+              <option>Old view</option>
+            </select>
+            <select class="form-select form-select-sm">
+              <option>Sort By</option>
+              <option>featured 1</option>
+              <option>featured 2</option>
+              <option>featured 3</option>
+              <option>featured 4</option>
+              <option>featured 5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row g-4">
+          <!-- row1 -->
+        <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 1">
+              <div class="card-body">
+              <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 2">
+             <div class="card-body">
+                <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More cards as needed -->
+        </div>
+
+        <!-- row2 -->
+            <div class="row g-4">
+          <!-- row1 -->
+        <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 1">
+              <div class="card-body">
+              <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 2">
+             <div class="card-body">
+                <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More cards as needed -->
+        </div>
+
+        <!-- row3 -->
+            <div class="row g-4">
+          <!-- row1 -->
+        <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 1">
+              <div class="card-body">
+              <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card custom-hover-shadow">
+              <img src="images/hero-image.jpg" style="border-radius: 10px; height: 150px;" class="card-img-top img-fluid" alt="Feature 2">
+             <div class="card-body">
+                <h6 class="card-title">
+                  <a href="apartment-info.html" style="color:rgb(143,226,248); text-decoration: none;">Apartment</a>
+              </h6>
+                <h5>Renovated Apartment</h5>
+                <p class="card-text"><i class="bi bi-geo-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                <div class="info">
+                  <p>Beds: 4</p>
+                  <p>Baths: 2</p>
+                  <p>Sq Ft: 52800</p>
+                </div>
+                <hr style="color: grey;">
+                <div class="profile">
+                  <div class="image">
+                    <img src="images/hero-image.jpg" alt="">
+                    <p>Kanzul Iman</p>
+                  </div>
+                  <p style="padding: 8px;">4 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More cards as needed -->
+        </div>
+      </div>
+      
+    </div>
+    <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center gap-3" style="margin-left: 40%;
+    margin-top: 3%;">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-arrow-left"></i></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#">30</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#"><i class="bi bi-arrow-right"></i></a>
+    </li>
+  </ul>
+</nav>
+  </div>
+</section>
+
+ <!-- footer section -->
+  <footer style="background-color: #24324a; color: white;">
+  <div class="container py-5">
+    <div class="row text-center text-md-start equal-line-height">
+      
+      <!-- About Site -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-3">About Site</h5>
+        <p class="zoom-effect">This is a platform to discover revenue-generating properties insights and analytics.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">About Us</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Investors</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Contact Us</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+        <h5 class="mb-3">Contact Us</h5>
+        <ul class="list-unstyled">
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">info@rgp.com</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">Collins Street West, Victoria</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">8007, Australia.</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">+1 246-345-0699</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">+1 246-345-0695</a></li>
+
+        </ul>
+       
+      </div>
+      
+      <!-- Follow Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-4">Follow Us</h5>
+        <div class="icons lh-2">
+           <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-facebook"></i></a></p>
+            <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-github"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-twitter"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-whatsapp"></i></a></p>
+
+        </div>
+             <h5 class="mb-3 mt-4">Subscribe <i class="bi bi-bell" style="padding: 20px;"></i></h5>
+             <form class="d-flex flex-column flex-sm-row gap-2">
+            <input type="email" class="form-control custom-placeholder btn-secondary" placeholder="Your email" required>
+            <button type="submit" class="btn btn-secondary"><i class="bi bi-send"></i></button>
+            </form>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Bottom Footer Bar -->
+  <div style="background-color: #1d293e;padding: 25px;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3" style="color:#7f8491">
+      <div class="mb-2 mb-md-0 zoom-effect">
+        <a href="#" class="text-decoration-none me-3">Home</a>
+        <a href="#" class="text-decoration-none me-3">Agent</a>
+        <a href="#" class="text-decoration-none me-3">Search</a>
+        <a href="#" class="text-decoration-none me-3">Investors</a>
+        <a href="#" class="text-decoration-none me-3">Blog</a>
+        <a href="#" class="text-decoration-none me-3">Contact</a>
+      </div>
+      <div>
+        © 2025 Revenue-Generate-Properties
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- model popup -->
+
+<div class="modal fade" id="memberModal" tabindex="-1" aria-labelledby="memberModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content" style="background-color: #f8f9fa;">
+      <div class="modal-body p-0 d-flex flex-column flex-lg-row">
+        
+        <!-- Left Side Image -->
+        <div class="d-none d-lg-block col-lg-6">
+          <img src="images/hero-image.jpg" alt="Join Us" class="img-fluid h-100 w-100" style="object-fit: cover; padding: 30px;">
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="col-12 col-lg-6 p-5">
+  <!-- Close Button at top-right -->
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs mb-4" id="memberTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" style="background-color: grey;">Register</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" style="background-color: grey;">Login</button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="memberTabContent">
+            <!-- Register Form -->
+            <div class="tab-pane fade show active" id="register" role="tabpanel">
+              <button class="btn btn-secondary w-100 mb-3"><i class="bi bi-facebook me-2"></i> Register with Facebook</button>
+              <button class="btn btn-secondary w-100 mb-3"><i class="bi bi-google me-2"></i> Register with Google</button>
+              
+              <form>
+                <div class="mb-2">
+                  <input type="text" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="mb-2">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-2">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-2">
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="mb-2">
+                  <input type="password" class="form-control" placeholder="Re-enter Password" required>
+                </div>
+                <div class="mb-2">
+                  <select class="form-select">
+                    <option selected disabled>Choose Account Type</option>
+                    <option>Single User</option>
+                    <option>Company</option>
+                  </select>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="termsCheck">
+                  <label class="form-check-label" for="termsCheck">
+                    I agree to the terms and conditions
+                  </label>
+                </div>
+                <button id="index.html" type="submit" onclick="window.location.href='index.html'" class="btn btn-secondary w-100">Sign Up</button>
+              </form>
+            </div>
+
+            <!-- Login Form -->
+            <div class="tab-pane fade" id="login" role="tabpanel">
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required autofocus>
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" placeholder="Password" required autofocus>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                  </div>
+                  <a href="#" class="text-decoration-none">Forgot Password?</a>
+                </div>
+                <button type="submit"onclick="window.location.href='index.html'" class="btn btn-secondary w-100">Login</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+  <i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i>
+</button>
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- custom file connect -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

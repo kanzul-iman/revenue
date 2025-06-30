@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <!-- css styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+     <script src="script.js" defer></script>
+      <!-- link to bootstrap cdn for css styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- internal css -->
+     <style>
+            .hero-section {
+      background-image: url('images/about-us.jpg');
+      background-size: cover;
+      background-position: center;
+      background-color: black;
+      opacity: 0.8;
+      height: 400px;
+      position: relative;
+      color: white;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* dark overlay */
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 50px;
+    }
+
+    .hero-text h1,
+    .hero-text p {
+      margin: 0;
+    }
+    .simple-design input{
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: rgb(159, 156, 156);
+
+    }
+    .button{
+        padding: 15px;
+        display: inline-block;   
+        background-color: black;
+        opacity: 0.9;
+        color: white;
+        border-radius: 15px;
+        border-bottom: 5px solid grey;   
+         border-left: 5px solid grey;  
+        font-weight: 600;
+        font-size: 1.1rem; 
+
+    }
+      .button:hover{
+        padding: 15px;
+        display: inline-block;   
+        background-color: grey;
+        opacity: 0.9;
+        color: black;
+        border-radius: 15px;
+        border-bottom: 5px solid black;   
+         border-left: 5px solid black;  
+        font-weight: 600;
+        font-size: 1.1rem; 
+
+    }
+
+    /* map */
+      .map-section {
+      background: linear-gradient(135deg, #6edaf6 0%, blue 100%);
+      padding: 20px 0;
+      opacity: 0.8;
+    }
+
+    .map-container {
+      border: 5px solid #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      overflow: hidden;
+      border-radius: 15px;
+      transform: scale(0.9);
+      transition: all 0.1s ease;
+    }
+
+    .map-container:hover {
+      transform: scale(1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+  
+
+     </style>
+</head>
+<body class="search-page" style="background-color: #f7f7f7;">
+          <!-- navbar -->
+      <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: white;">
+  <div class="container-fluid mt-100">
+    <!-- Left: Logo -->
+    <a class="navbar-brand " href="#">
+      <img src="images/log.png" alt="Logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right: Links + Button -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+       <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="search.html">Search</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="agents.html">Agents</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+
+          <a href="#" class="btn btn-light ms-3 d-flex align-items-center"  data-bs-toggle="modal" data-bs-target="#memberModal" style="color:#6edaf6; border-radius:30px; padding:15px 20px 15px 10px; font-weight: 700;">
+            <i class="bi bi-person-plus-fill me-2"></i> Become a Member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- hero section -->
+   <section class="hero-section">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <p class="mb-2">Home / Contact</p>
+        <h1 class="mb-2">Contact Us</h1>
+      </div>
+    </div>
+  </section>
+
+<section class="py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row g-4 justify-content-around">
+      <!-- Left Column: Contact Form -->
+      <div class="col-12 col-md-7 p-4 bg-white rounded shadow-sm" style="color: #596982 !important; font-weight: 300;">
+        <h4 class="mb-3">Send Us An Email</h4>
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deserunt accusantium autem impedit,
+          inventore doloremque quos provident odit tempora dolor eum dignissimos officia praesentium, unde porro
+          aliquam adipisci. Beatae, distinctio?
+        </p>
+
+        <form>
+          <div class="row g-3 mt-3">
+            <div class="col-12 col-md-6 simple-design">
+              <input type="text" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="col-12 col-md-6 simple-design">
+              <input type="tel" class="form-control" placeholder="Phone" required>
+            </div>
+            <div class="col-12 col-md-6 simple-design">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-12 col-md-6 simple-design">
+              <input type="text" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="col-12 simple-design">
+              <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12 btn">
+              <button type="submit" class="btn button">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Column: Contact Info -->
+      <div class="col-12 col-md-4 p-4 bg-white rounded shadow-sm" style="color: #596982 !important; font-weight: 300;">
+        <h4 class="mb-3">Contact Us</h4>
+        <p class="mb-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias esse corrupti dignissimos suscipit
+          tenetur iusto incidunt asperiores harum, quam sint voluptas. Adipisci, hic. Ad nulla ipsa aspernatur.
+          Tenetur, dolor totam.
+        </p>
+
+        <h5 class="mb-1">Address</h5>
+        <p class="mb-3">2301 Ravenswood Rd<br>Madison, WI 53711</p>
+
+        <h5 class="mb-1">Phone</h5>
+        <p class="mb-3">(315) 905-2321</p>
+
+        <h5 class="mb-1">Mail</h5>
+        <p class="mb-3">kanzuliman@gmail.com</p>
+
+        <h5 class="mb-1">Skype</h5>
+        <p class="mb-3">findhouse.com</p>
+
+        <h5 class="mb-2">Follow Us</h5>
+        <div class="d-flex justify-content gap-4">
+          <!-- Example social icons using Bootstrap icons -->
+          <a href="#" class="text-primary fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-info fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-danger fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-primary fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-success fs-4"><i class="bi bi-github"></i></a>
+          <a href="#" class="text-warning fs-4"><i class="bi bi-snapchat"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="map-section">
+  <div class="container">
+    <h2 class="text-center text-white mb-4">Find Us Here</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1058468149577!2d78.47519967331827!3d17.40670730225197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99e0569028df%3A0x6ee66d2f3fb1c463!2sLiberty%20Plaza%2C%20Himayat%20Nagar%20Rd%2C%20Gagan%20Mahal%2C%20Domalguda%2C%20Himayatnagar%2C%20Hyderabad%2C%20Telangana%20500029%2C%20India!5e0!3m2!1sen!2s!4v1751244826129!5m2!1sen!2s" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <!-- parteners section -->
+ <section class="pt-5 padding">
+   <div class="container">
+    <h2 class="text-center mb-1">Our Partners</h2>
+    <p class="text-center mb-4">We only work with the best companies around the globe</p>
+
+    <div class="row d-flex justify-content-center ">
+      <div class="col-md-2 p-5 increase">
+        <img src="images/image1.png" alt="">
+      </div>
+      <div class="col-md-2 p-5">
+        <img src="images/image2.png" alt="">
+      </div>
+      <div class="col-md-2 p-5">
+        <img src="images/image3.png" alt="">
+      </div>
+      <div class="col-md-2 p-5">
+        <img src="images/image4.png" alt="">
+      </div>
+      <div class="col-md-2 p-5">
+        <img src="images/image5.png" alt="">
+      </div>
+    </div>
+   </div>
+
+   <div class="row search" style="background-color: #06c0ef; color: white;">
+    <div class="col-md-5 p-4 ">
+      <h4 class="heading">Start Your Property Search Now</h4>
+      <p class="parah">We only work with the best companies around the globe</p>
+    </div>
+
+     <div class="col-md-2 p-5">
+    <div class="search-now">
+      <button class="p-2" type="submit" >Search Now</button>
+    </div>
+      
+    </div>
+   </div>
+   </div>
+ </section>
+
+
+  <!-- footer section -->
+  <footer style="background-color: #24324a; color: white;">
+  <div class="container py-5">
+    <div class="row text-center text-md-start equal-line-height">
+      
+      <!-- About Site -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-3">About Site</h5>
+        <p class="zoom-effect">This is a platform to discover revenue-generating properties insights and analytics.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">About Us</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Investors</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Contact Us</a></li>
+          <li class="zoom-effect"><a href="#" class="text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4 ">
+        <h5 class="mb-3">Contact Us</h5>
+        <ul class="list-unstyled">
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">info@rgp.com</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">Collins Street West, Victoria</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">8007, Australia.</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">+1 246-345-0699</a></li>
+        <li class="zoom-effect"><a href="#" class="text-decoration-none">+1 246-345-0695</a></li>
+
+        </ul>
+       
+      </div>
+      
+      <!-- Follow Us -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <h5 class="mb-4">Follow Us</h5>
+        <div class="icons lh-2">
+           <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-facebook"></i></a></p>
+            <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-github"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-twitter"></i></a></p>
+             <p class="zoom-effect"><a href="#" class="text-decoration-none"><i class="bi bi-whatsapp"></i></a></p>
+
+        </div>
+             <h5 class="mb-3 mt-4">Subscribe <i class="bi bi-bell" style="padding: 20px;"></i></h5>
+             <form class="d-flex flex-column flex-sm-row gap-2">
+            <input type="email" class="form-control custom-placeholder btn-secondary" placeholder="Your email" required>
+            <button type="submit" class="btn btn-secondary"><i class="bi bi-send"></i></button>
+            </form>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Bottom Footer Bar -->
+  <div style="background-color: #1d293e;padding: 25px;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3" style="color:#7f8491">
+      <div class="mb-2 mb-md-0 zoom-effect">
+        <a href="#" class="text-decoration-none me-3">Home</a>
+        <a href="#" class="text-decoration-none me-3">Agent</a>
+        <a href="#" class="text-decoration-none me-3">Search</a>
+        <a href="#" class="text-decoration-none me-3">Investors</a>
+        <a href="#" class="text-decoration-none me-3">Blog</a>
+        <a href="#" class="text-decoration-none me-3">Contact</a>
+      </div>
+      <div>
+        © 2025 Revenue-Generate-Properties
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- model popup -->
+
+<div class="modal fade" id="memberModal" tabindex="-1" aria-labelledby="memberModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content" style="background-color: #f8f9fa;">
+      <div class="modal-body p-0 d-flex flex-column flex-lg-row">
+        
+        <!-- Left Side Image -->
+        <div class="d-none d-lg-block col-lg-6">
+          <img src="images/hero-image.jpg" alt="Join Us" class="img-fluid h-100 w-100" style="object-fit: cover; padding: 30px;">
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="col-12 col-lg-6 p-5">
+  <!-- Close Button at top-right -->
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs mb-4" id="memberTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" style="background-color: grey;">Register</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" style="background-color: grey;">Login</button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="memberTabContent">
+            <!-- Register Form -->
+            <div class="tab-pane fade show active" id="register" role="tabpanel">
+              <button class="btn btn-secondary w-100 mb-3"><i class="bi bi-facebook me-2"></i> Register with Facebook</button>
+              <button class="btn btn-secondary w-100 mb-3"><i class="bi bi-google me-2"></i> Register with Google</button>
+              
+              <form>
+                <div class="mb-2">
+                  <input type="text" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="mb-2">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-2">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-2">
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="mb-2">
+                  <input type="password" class="form-control" placeholder="Re-enter Password" required>
+                </div>
+                <div class="mb-2">
+                  <select class="form-select">
+                    <option selected disabled>Choose Account Type</option>
+                    <option>Single User</option>
+                    <option>Company</option>
+                  </select>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="termsCheck">
+                  <label class="form-check-label" for="termsCheck">
+                    I agree to the terms and conditions
+                  </label>
+                </div>
+                <button id="index.html" type="submit" onclick="window.location.href='index.html'" class="btn btn-secondary w-100">Sign Up</button>
+              </form>
+            </div>
+
+            <!-- Login Form -->
+            <div class="tab-pane fade" id="login" role="tabpanel">
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required autofocus>
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" placeholder="Password" required autofocus>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                  </div>
+                  <a href="#" class="text-decoration-none">Forgot Password?</a>
+                </div>
+                <button type="submit"onclick="window.location.href='index.html'" class="btn btn-secondary w-100">Login</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+  <i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i>
+</button>
+
+
+
+
+
+     <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

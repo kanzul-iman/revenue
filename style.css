@@ -1,0 +1,382 @@
+/* goolge font family Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    
+}
+
+/* navbar */
+.logo-design{
+    width: 20px;
+}
+
+
+    /* Background image section */
+    .hero-section {
+       position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  z-index: 1;
+      
+    }
+
+    .navbar-brand img {
+      height: 50px;     
+      width: 100%;
+      font-weight: 800;
+    }
+
+    .nav-link {
+      margin-right: 15px;
+      
+      font-weight: 500;
+      
+    }
+  /* Default: white links for home */
+.home-page .navbar .nav-link {
+  color: white;
+}
+.home-page .transparent-navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+
+/* White background: dark links for search */
+.search-page .navbar .nav-link {
+  color: black;
+}
+    
+    .text-color{
+        color: #6edaf6;
+    }
+    
+    .home-section {
+        
+      background-image: url('images/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* gallery image section */
+
+/* Section heading styling */
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* Container for image (card) */
+.property-img {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Actual image inside the container */
+.property-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Zoom image on hover (but not the container) */
+.property-img:hover img {
+  transform: scale(1.05);
+}
+.overlay-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.city-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.properties {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+
+
+
+ /* Move indicators down with margin */
+  #featuresCarousel .carousel-indicators {
+    margin-top: 20px;
+    bottom: -70px; /* Push indicators below carousel */
+  }
+
+  /* Customize the indicators to be black */
+  #featuresCarousel .carousel-indicators [data-bs-target] {
+    width:15px;
+    height: 15px;
+    background-color: black; /* Normal dot color */
+  }
+
+  /* Active dot black and slightly bigger */
+  #featuresCarousel .carousel-indicators .active {
+    background-color: black;
+    width: 15px;
+    height: 15px;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .image{
+     display: flex;
+     
+     
+  }
+  .image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    
+  }
+  .image p{
+  
+    font-size: 18px;
+    padding: 8px;
+
+  }
+  .custom-hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* custom shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
+  .card{
+    object-fit: cover;
+    padding: 10px;
+  }
+
+ .icon-color {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.custom-card {
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 255, 0.2);
+}
+
+.custom-card:hover .icon-color {
+  background-color: #0d6efd; /* Bootstrap blue */
+  
+}
+
+h2.fw-600 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+/* testimonial section */
+.circle-profile {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid white;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+.card-body h5 {
+  font-weight: bold;
+}
+
+/* search now section */
+.search{
+  max-width: 1270px;
+  display: flex;
+  justify-content: space-around;
+}
+.heading{
+  font-size: 28px;
+  font-weight: 800;
+
+}
+.parah{
+   font-size: 18px;
+  font-weight: 600;
+  
+
+}
+
+.search-now button{
+  background-color: #ff787c;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ff787c;
+  font-weight: 800;
+   box-shadow: white;
+   border-radius: 10px;
+  
+
+}
+
+.search-now button:hover{
+  background-color: white;
+  color: #06c0ef;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ff787c;
+  font-weight: 600;
+  box-shadow: white;
+}
+
+/* footer */
+ .zoom-effect {
+    transition: transform 0.3s ease;
+    color: #7f8491;
+  }
+  .zoom-effect:hover {
+    transform: scale(1.05);
+    color: white;
+  }
+  .zoom-effect a{
+    color: #7f8491;
+  }
+    .zoom-effect a:hover{
+    color: white;
+  }
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+  
+  }
+  .btn-secondary {
+  transition: transform 0.3s ease;
+  
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+.custom-placeholder::placeholder {
+  color: white !important;
+  opacity: 1;    
+}
+/* model popup */
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* search section */
+.search-section {
+  background-color: #f8f9fa; /* light gray */
+}
+
+.search-section h2 {
+  color: #333;
+}
+
+.equal-line-height {
+  line-height: 2;
+}
+
+  .pagination .page-link {
+    border-radius: 50% !important; /* make circular */
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  /* Back to Top Button Styles */
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  display: none; /* Hide by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+#backToTopBtn:hover {
+  color: #0099cc;
+}
+
+  /* Only for screens smaller than 992px (Bootstrap's breakpoint for lg) */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: black !important;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
+
+
+}
+
